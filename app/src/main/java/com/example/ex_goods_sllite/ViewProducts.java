@@ -34,7 +34,7 @@ Button btnAddNewProduct;
         dbHandler = new DBHandler(ViewProducts.this);
 //        dbHandler.insertData("product1", "100", "description1");
         productList = dbHandler.readData();
-        Log.i("Product list", "onCreate: "+productList.get(1).getProductName());
+//        Log.i("Product list", "onCreate: "+productList.get(1).getProductName());
         rcvProductAdapter = new RCVProductAdapter(productList, ViewProducts.this);
         productsRV = findViewById(R.id.viewProductsRCV);
         productsRV.setLayoutManager(new LinearLayoutManager(ViewProducts.this, RecyclerView.VERTICAL, false));
